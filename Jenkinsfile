@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build') {
-         app = docker.build("ChiyoonSong/hello-jenkinss")
+         app = docker.build("chiyoonsong/hello-jenkinss")
          // 빌드할 이미지명은 자신의 Docker Hub 계정을 넣어주어야 합니다.
 	 // app = docker.build("<계정명>/<저장소명>")
      }
